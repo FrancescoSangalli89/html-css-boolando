@@ -8,6 +8,16 @@ body {
     font-family: sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
 /* inizio header */
 
 header {
@@ -30,8 +40,7 @@ header {
     align-items: center;
 }
 
-header .menu ul {
-    list-style: none;
+header .menu ul, footer .info ul {
     display: flex;
 }
 
@@ -39,10 +48,8 @@ header .menu ul li {
     padding: 5px;
 }
 
-header a {
-    text-decoration: none;
-    color: white;
-    padding: 5px;
+header .menu a {
+    font-weight: bold;
 }
 
 #logo {
@@ -148,10 +155,43 @@ header a {
     font-weight: 100;
 }
 
-
-
-
-
-
-
 /* fine main */
+
+/* inizio footer */
+
+footer {
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+
+footer .footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.info ul li {
+    padding: 5px 5px 0 0;
+}
+
+.info ul li a {
+    font-size: 13px;
+    font-weight: 100;
+    padding: 5px 5px 0 0;
+}
+
+.social h4 {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social a {
+    padding: 5px 0 0 5px;
+}
+
+/* fine footer */
