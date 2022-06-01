@@ -15,7 +15,6 @@ ul {
 a {
     text-decoration: none;
     color: white;
-    padding: 5px;
 }
 
 /* inizio header */
@@ -50,6 +49,7 @@ header .menu ul li {
 
 header .menu a {
     font-weight: bold;
+    padding: 5px;
 }
 
 #logo {
@@ -139,6 +139,10 @@ header .menu a {
 
 .tag.red.s50::after {
     content: '-50%';
+}
+
+.target {
+    color: black;
 }
 
 .description {
