@@ -8,6 +8,8 @@ body {
     font-family: sans-serif;
 }
 
+/* inizio header */
+
 header {
     background-color: #FF6801;
     width: 100vw;
@@ -16,6 +18,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 7777;
 }
 
 .top-container {
@@ -25,10 +28,6 @@ header {
     margin: auto;
     justify-content: space-between;
     align-items: center;
-}
-
-.menu {
-
 }
 
 header .menu ul {
@@ -53,3 +52,106 @@ header a {
 .shop-menu {
     text-align: right;
 }
+
+/* fine header */
+
+/* inizio main */
+
+.cards-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.card {
+    width: calc(100% / 3 - 10px);
+    margin-bottom: 20px;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img {
+    width: 100%;
+
+}
+
+.img2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-container:hover .img2 {
+    display: inline;
+}
+
+.heart {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.heart:hover {
+    color: red;
+}
+
+.tag-container {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+.tag::after {
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.tag.red::after {
+    content: '';
+    background-color: red;
+}
+
+.tag.green::after {
+    content: 'Sostenibilità';
+    background-color: green;
+}
+
+.tag.red.s30::after {
+    content: '-30%';
+}
+
+.tag.red.s50::after {
+    content: '-50%';
+}
+
+.description {
+    font-weight: bold;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+.sale {
+    text-decoration: line-through;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+/* fine main */
