@@ -52,12 +52,25 @@ header .menu a {
     padding: 5px;
 }
 
+.menu, .shop-menu {
+    width: 30%;
+}
+
+.logo-container {
+    width: 40%;
+    text-align: center;
+}
+
 #logo {
     height: 40px;
 }
 
 .shop-menu {
     text-align: right;
+}
+
+header .shop-menu a {
+    padding: 3px;
 }
 
 /* fine header */
